@@ -1,4 +1,4 @@
-FROM perl:5.30-slim-threaded
+FROM perl:5.28-slim-threaded
 LABEL maintainer="Veit Olschinski <volschin@gmail.com>"
 
 #RUN apk add --update netcat-openbsd && rm -rf /var/cache/apk/*
