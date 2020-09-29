@@ -7,7 +7,6 @@ ENV TERM xterm
 # Install base environment
 RUN apt-get update \
   && apt-get install -qqy --no-install-recommends apt-utils \
-  && apt-get install -qqy --no-install-recommends \
   apt-transport-https \
   bash \
   netcat \
