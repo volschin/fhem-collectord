@@ -1,7 +1,7 @@
-FROM volschin/alpine-perl
+FROM alpine:3.16
 LABEL maintainer="Veit Olschinski <volschin@gmail.com>"
 
-RUN apk add --update netcat-openbsd && rm -rf /var/cache/apk/*
+RUN apk add --update perl netcat-openbsd && rm -rf /var/cache/apk/*
 
 ADD https://svn.fhem.de/fhem/trunk/fhem/contrib/PRESENCE/collectord /collectord
 # COPY src/collectord.conf /collectord.conf
