@@ -1,4 +1,4 @@
-FROM alpine:3.16
+FROM alpine:3.17
 LABEL maintainer="Veit Olschinski <volschin@gmail.com>"
 
 RUN apk add --update perl netcat-openbsd && rm -rf /var/cache/apk/*
