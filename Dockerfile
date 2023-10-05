@@ -1,7 +1,7 @@
 FROM alpine:3.18
 LABEL maintainer="Veit Olschinski <volschin@gmail.com>"
 
-RUN apk add --no-cache --update perl netcat-openbsd tzdara ca-certificates && rm -rf /var/cache/apk/*
+RUN apk add --no-cache --update perl netcat-openbsd tzdata ca-certificates && rm -rf /var/cache/apk/*
 
 ADD https://svn.fhem.de/fhem/trunk/fhem/contrib/PRESENCE/collectord /collectord
 # COPY src/collectord.conf /collectord.conf
