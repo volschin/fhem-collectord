@@ -1,4 +1,4 @@
-FROM alpine:3.22
+FROM alpine:3.23
 LABEL maintainer="Veit Olschinski <volschin@gmail.com>"
 
 RUN apk add --no-cache --update perl netcat-openbsd tzdata ca-certificates && rm -rf /var/cache/apk/*
